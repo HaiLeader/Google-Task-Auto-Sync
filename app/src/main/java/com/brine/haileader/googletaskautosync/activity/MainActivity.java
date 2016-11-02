@@ -1,4 +1,4 @@
-package com.brine.haileader.googletaskautosync.activities;
+package com.brine.haileader.googletaskautosync.activity;
 
 import android.content.res.Configuration;
 import android.support.annotation.NonNull;
@@ -16,7 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.brine.haileader.googletaskautosync.R;
-import com.brine.haileader.googletaskautosync.fragments.HomeFragment;
+import com.brine.haileader.googletaskautosync.fragment.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_settings:
                 return true;
         }
-        return super.onOptionsItemSelected(item);
+        return false;
     }
 
     @Override
